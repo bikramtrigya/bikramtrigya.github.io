@@ -1,92 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Company Website</title>
-
-    <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="styling.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-   
-  </head>
-  <body>
-<!--Create Nav bar-->
-<nav role="navigation" class="navbar navbar-inverse">
-     <div class="container-fluid">
-         <div class="navbar-header">
-         <a class="navbar-brand" href="#"><img src="images/weblogo.png" class="logo"></a>
-             <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
-                <span class="sr-only">Toggle navigation</span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-
-             </button>
-         </div>
-         <div class="navbar-collapse collapse" id="navbarCollapse">
-         <ul class="nav navbar-nav">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Portfolio</a></li>
-             <li><a href="#">Contact</a></li>
-
-             </ul>
-         </div>
+    <head>
+        <title>Fruit Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
     
-    </div>
-      </nav>
-<!--Create header-->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Looking to make an Awesome Website?</h1>
-    </div>
-      
-      </div>
-<!--Create icons with text-->
-<div class="icons">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <img src="images/money.png" class="bodyimage">
-                  <h2>Price it</h2>
-                  <p>Get in touch for an immediate no obligation quote!</p>
-              
-              </div>
-              <div class="col-md-4">
-                  <img src="images/plan.png" class="bodyimage">
-                  <h2>Plan it</h2>
-                  <p>We will agree on a deadline and commit to it.</p>
-              </div>
-              <div class="col-md-4">
-                  <img src="images/finish.png" class="bodyimage">
-                  <h2>Make it</h2>
-                  <p>We will deliver your website on time with the best quality.</p>
-              </div>
-          
-          </div>
-    
-    </div>
-      </div>
-<!--Create contact button-->
-      <div class="contact">
-        <div class="container">
-            <a href="#" class="btn">Get in touch</a>
-          </div>
-      </div>
-<!--Create Footer-->
-      <div class="footer">
-            <div class="container">
-                <p>&copy; Develop by Bikram Chhetri Pokhrel</p>
-          
-          </div>
-      </div>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <body>
+        <div id="container">
+            <div id="trialsLeft">
+                
+            </div>
+            <div id="score">
+            Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try again
+            </div>
+            <div id="fruitsContainer">
+               <img id="fruit1" class="fruit">
+            </div>
+            <div id="instruction">
+                Catch Fruits
+            </div>
+            
+            <div id="startreset">
+                Start game
+            </div>
+            
+            <div id="gameOver">
+                
+            </div>
+        </div>
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3"></source>
+            <source src="audio/slicefruit.ogg"></source>
+
+        </audio>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+    </body>
 </html>
